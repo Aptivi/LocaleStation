@@ -1,0 +1,55 @@
+name: Prepare release
+
+on:
+  push:
+    tags:
+      - '**'
+    
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+          ref: ${{ github.ref }}
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Setup DocFX
+        run: dotnet tool install --global docfx
+      - name: Release Asset Preparation
+        id: release-asset
+        run: |
+          make rel-ci
+          make doc
+          ./tools/docgen-pack.sh
+          echo "SUBJECT=$(cat CHANGES.TITLE)" >> "$GITHUB_OUTPUT"
+          echo 'BODY<<EOF' >> "$GITHUB_OUTPUT"
+          cat CHANGES >> "$GITHUB_OUTPUT"
+          sha256sum tools/*.zip | sed -e 's/^/- /g' >> "$GITHUB_OUTPUT"
+          echo 'EOF' >> "$GITHUB_OUTPUT"
+      - name: Binary Attestation
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: 'tools/*.zip'
+      - name: Release Making
+        uses: softprops/action-gh-release@v2
+        with:
+          body: ${{ steps.release-asset.outputs.BODY }}
+          name: ${{ steps.release-asset.outputs.SUBJECT }}
+          files: |
+            tools/*.zip
+      - name: Package Publication
+        run: NUGET_APIKEY=${{ secrets.NUGET_APIKEY }} ./tools/push.sh
+      - name: Notify build
+        uses: tsickert/discord-webhook@v6.0.0
+        with:
+          webhook-url: ${{ secrets.WEBHOOK_URL }}
+          content: "<:AptiviLibrary:1305819644824911872> ${{ steps.release-asset.outputs.SUBJECT }} <:AptiviLibrary:1305819644824911872>\n\n${{ steps.release-asset.outputs.BODY }}"

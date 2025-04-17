@@ -1,0 +1,53 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "files": [ "public/**/*.csproj" ],
+                    "src": ".."
+                }
+            ],
+            "dest": "api",
+            "disableGitFeatures": false,
+            "disableDefaultFilter": false,
+            "filter": "filterConfig.yml"
+        }
+    ],
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "api/**.yml",
+                    "index.md",
+                    "toc.yml"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [ 
+                    "images/**",
+                    "logo.svg",
+                    "favicon.ico"
+                ]
+            }
+        ],
+        "dest": "../docs",
+        "globalMetadata": {
+            "_appTitle": "Localizer API - Aptivi",
+            "_enableSearch": true
+        },
+        "globalMetadataFiles": [],
+        "fileMetadataFiles": [],
+        "template": [ "default", "theme" ],
+        "postProcessors": [],
+        "markdownEngineName": "markdig",
+        "noLangKeyword": false,
+        "keepFileLink": false,
+        "cleanupCacheHistory": false,
+        "disableGitFeatures": false,
+        "sitemap": {
+            "baseUrl": "https://aptivi.github.io/Localizer/"
+        }
+    }
+}
