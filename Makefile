@@ -34,10 +34,10 @@ clean:
 # Below targets specify functions for full build
 
 invoke-build:
-	./tools/build.sh "$(ENVIRONMENT)" || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) ./tools/build.sh "$(ENVIRONMENT)")
+	bash tools/build.sh "$(ENVIRONMENT)" || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) bash tools/build.sh "$(ENVIRONMENT)")
 
 invoke-build-ci:
-	./tools/build.sh "$(ENVIRONMENT)" -p:ContinuousIntegrationBuild=true || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) ./tools/build.sh "$(ENVIRONMENT)" -p:ContinuousIntegrationBuild=true)
+	bash tools/build.sh "$(ENVIRONMENT)" -p:ContinuousIntegrationBuild=true || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) bash tools/build.sh "$(ENVIRONMENT)" -p:ContinuousIntegrationBuild=true)
 
 invoke-doc-build:
-	./tools/docgen.sh || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) ./tools/docgen.sh)
+	bash tools/docgen.sh || (echo Retrying with heap limit 0x$(DOTNET_HEAP_LIMIT)... && DOTNET_GCHeapHardLimit=$(DOTNET_HEAP_LIMIT) bash tools/docgen.sh)
