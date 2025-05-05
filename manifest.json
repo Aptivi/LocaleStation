@@ -14,6 +14,89 @@
       }
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Localizer.Generator.LocalizationGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Localizer.Generator.LocalizationGenerator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Localizer.Generator.LocalizationGenerator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Localizer.Generator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Localizer.Generator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Localizer.Generator",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Localizer.Instances.LanguageInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Localizer.Instances.LanguageInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Localizer.Instances.LanguageInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Localizer.Instances.LocalizationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Localizer.Instances.LocalizationInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Localizer.Instances.LocalizationInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Localizer.Instances.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Localizer.Instances.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Localizer.Instances",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {

@@ -1,4 +1,29 @@
 {
+  "api/Localizer.Generator.LocalizationGenerator.html": {
+    "href": "api/Localizer.Generator.LocalizationGenerator.html",
+    "title": "Class LocalizationGenerator | Localizer API - Aptivi",
+    "summary": "Class LocalizationGenerator Inheritance object LocalizationGenerator Namespace: Localizer.Generator Assembly: Localizer.dll Syntax [Generator] public class LocalizationGenerator Methods | Edit this page View Source Initialize(IncrementalGeneratorInitializationContext) Called to initialize the generator and register generation steps via callbacks on the context Declaration public void Initialize(IncrementalGeneratorInitializationContext context) Parameters Type Name Description IncrementalGeneratorInitializationContext context The Microsoft.CodeAnalysis.IncrementalGeneratorInitializationContext to register callbacks on"
+  },
+  "api/Localizer.Generator.html": {
+    "href": "api/Localizer.Generator.html",
+    "title": "Namespace Localizer.Generator | Localizer API - Aptivi",
+    "summary": "Namespace Localizer.Generator Classes LocalizationGenerator"
+  },
+  "api/Localizer.Instances.LanguageInfo.html": {
+    "href": "api/Localizer.Instances.LanguageInfo.html",
+    "title": "Class LanguageInfo | Localizer API - Aptivi",
+    "summary": "Class LanguageInfo Inheritance object LanguageInfo Namespace: Localizer.Instances Assembly: Localizer.dll Syntax public class LanguageInfo Properties | Edit this page View Source Cultures Declaration [JsonIgnore] public string[] Cultures { get; } Property Value Type Description string[] | Edit this page View Source Language Declaration [JsonIgnore] public string Language { get; } Property Value Type Description string | Edit this page View Source Localizations Declaration [JsonIgnore] public LocalizationInfo[] Localizations { get; } Property Value Type Description LocalizationInfo[] | Edit this page View Source Name Declaration [JsonIgnore] public string Name { get; } Property Value Type Description string"
+  },
+  "api/Localizer.Instances.LocalizationInfo.html": {
+    "href": "api/Localizer.Instances.LocalizationInfo.html",
+    "title": "Class LocalizationInfo | Localizer API - Aptivi",
+    "summary": "Class LocalizationInfo Inheritance object LocalizationInfo Namespace: Localizer.Instances Assembly: Localizer.dll Syntax public class LocalizationInfo Properties | Edit this page View Source Localization Declaration [JsonIgnore] public string Localization { get; } Property Value Type Description string | Edit this page View Source Text Declaration [JsonIgnore] public string Text { get; } Property Value Type Description string"
+  },
+  "api/Localizer.Instances.html": {
+    "href": "api/Localizer.Instances.html",
+    "title": "Namespace Localizer.Instances | Localizer API - Aptivi",
+    "summary": "Namespace Localizer.Instances Classes LanguageInfo LocalizationInfo"
+  },
   "index.html": {
     "href": "index.html",
     "title": "| Localizer API - Aptivi",
