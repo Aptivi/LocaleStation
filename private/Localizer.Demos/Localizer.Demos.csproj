@@ -7,9 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\public\Localizer\Localizer.csproj" />
+    <ProjectReference Include="..\..\public\Localizer\Localizer.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 
     <PackageReference Remove="Microsoft.SourceLink.GitHub" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Resources\Languages\*.json" AptLocIsLanguagePath="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocIsLanguagePath" />
+    <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocDisableLocalization" />
   </ItemGroup>
 
 </Project>

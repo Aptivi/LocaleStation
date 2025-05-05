@@ -1,0 +1,8 @@
+<Project>
+
+    <ItemGroup>
+        <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocIsLanguagePath" />
+        <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocDisableLocalization" />
+    </ItemGroup>
+
+</Project>
