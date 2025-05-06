@@ -68,6 +68,7 @@ namespace Localizer.Generator
                 if (localizationText == null)
                 {
                     var diag = LocalizationDiagnostics.GetLocalizationReadErrorDiagnostic(languageFileInfo.Left.Path);
+                    ctx.ReportDiagnostic(diag);
                     return;
                 }
                 var localizationTextStr = localizationText.ToString();
