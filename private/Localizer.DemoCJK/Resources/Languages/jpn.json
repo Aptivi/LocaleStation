@@ -1,0 +1,15 @@
+﻿{
+    "lang": "jpn",
+    "name": "日本語（日本）",
+    "cultures": [ "ja-JP" ],
+    "locs": [
+        {
+            "loc": "TEXT_HELLO_WORLD",
+            "text": "こんにちは世界！"
+        },
+        {
+            "loc": "TEXT_HI",
+            "text": "こんにちは！"
+        }
+    ]
+}

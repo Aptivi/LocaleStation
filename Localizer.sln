@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildTargets", "private\Bui
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localizer.Demos", "private\Localizer.Demos\Localizer.Demos.csproj", "{5DA085A4-5BA7-4577-B3BF-4100291F97C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localizer.DemoCJK", "private\Localizer.DemoCJK\Localizer.DemoCJK.csproj", "{AD493A34-DA11-F025-D5BE-A8C40711D67D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{5DA085A4-5BA7-4577-B3BF-4100291F97C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DA085A4-5BA7-4577-B3BF-4100291F97C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DA085A4-5BA7-4577-B3BF-4100291F97C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD493A34-DA11-F025-D5BE-A8C40711D67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD493A34-DA11-F025-D5BE-A8C40711D67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD493A34-DA11-F025-D5BE-A8C40711D67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD493A34-DA11-F025-D5BE-A8C40711D67D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{23DCC354-DE52-4FE9-9D5E-743D0EFA5748} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{B9645890-644D-153E-D2CE-A0C892177717} = {B3B68E5B-B24E-4A9E-A649-C8A0A6817026}
 		{5DA085A4-5BA7-4577-B3BF-4100291F97C9} = {2BDC3DD7-E0A6-4105-801E-A9B708BAB3AE}
+		{AD493A34-DA11-F025-D5BE-A8C40711D67D} = {2BDC3DD7-E0A6-4105-801E-A9B708BAB3AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82EDD14F-D4C2-46B9-9161-8C4CC9E18A0C}

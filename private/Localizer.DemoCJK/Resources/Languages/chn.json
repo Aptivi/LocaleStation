@@ -1,0 +1,15 @@
+﻿{
+    "lang": "chn",
+    "name": "简体中文",
+    "cultures": [ "zh-TW" ],
+    "locs": [
+        {
+            "loc": "TEXT_HELLO_WORLD",
+            "text": "你好世界！"
+        },
+        {
+            "loc": "TEXT_HI",
+            "text": "你好！"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+﻿{
+    "lang": "kor",
+    "name": "한국어(한국)",
+    "cultures": [ "ko-KR" ],
+    "locs": [
+        {
+            "loc": "TEXT_HELLO_WORLD",
+            "text": "안녕하세요!"
+        },
+        {
+            "loc": "TEXT_HI",
+            "text": "안녕하세요!"
+        }
+    ]
+}
