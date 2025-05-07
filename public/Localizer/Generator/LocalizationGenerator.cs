@@ -141,6 +141,27 @@ namespace Localizer.Generator
                 langClassBuilder.AppendLine("            }");
                 langClassBuilder.AppendLine("            return loc;");
                 langClassBuilder.AppendLine("        }");
+                langClassBuilder.AppendLine();
+
+                // Add a function that determines whether the given localization is found or not
+                langClassBuilder.AppendLine("        internal static bool HasLocalization(string loc)");
+                langClassBuilder.AppendLine("        {");
+                langClassBuilder.AppendLine("            return");
+                if (processedLocalizationNames.Count == 0)
+                    langClassBuilder.AppendLine("                false");
+                for (int i = 0; i < processedLocalizationNames.Count; i++)
+                {
+                    var locName = processedLocalizationNames[i];
+
+                    // Add code that detects the localization
+                    langClassBuilder.Append($"                loc == \"{locName}\"");
+                    if (i == processedLocalizationNames.Count - 1)
+                        langClassBuilder.AppendLine();
+                    else
+                        langClassBuilder.AppendLine(" ||");
+                }
+                langClassBuilder.AppendLine("            ;");
+                langClassBuilder.AppendLine("        }");
 
                 // Finally, register the output
                 langClassBuilder.AppendLine(footer);
@@ -220,8 +241,33 @@ namespace Localizer.Generator
                     langClassBuilder.AppendLine($"                case \"{locName}\":");
                     langClassBuilder.AppendLine($"                    return LocalStrings_{locName}.GetLocalizedString(id);");
                 }
+                langClassBuilder.AppendLine("                default:");
+                langClassBuilder.AppendLine("                    return $\"{lang}_{id}\";");
                 langClassBuilder.AppendLine("            }");
-                langClassBuilder.AppendLine("            return $\"{lang}_{id}\";");
+                langClassBuilder.AppendLine("        }");
+
+                // Add a function that checks the localization. We don't use reflection here for AOT compatibility
+                langClassBuilder.AppendLine("        /// <summary>");
+                langClassBuilder.AppendLine("        /// Checks to see if the given string using the string ID in a specific langauge exists");
+                langClassBuilder.AppendLine("        /// </summary>");
+                langClassBuilder.AppendLine("        /// <param name=\"id\">String ID that represents a localization</param>");
+                langClassBuilder.AppendLine("        /// <param name=\"lang\">Language to translate to</param>");
+                langClassBuilder.AppendLine("        /// <returns>True if exists; false otherwise</returns>");
+                langClassBuilder.AppendLine("        public static bool Exists(string id, string lang)");
+                langClassBuilder.AppendLine("        {");
+                langClassBuilder.AppendLine("            switch (lang)");
+                langClassBuilder.AppendLine("            {");
+                for (int i = 0; i < totalLanguages.Count; i++)
+                {
+                    var locName = totalLanguages[i];
+
+                    // Add code that detects the localization
+                    langClassBuilder.AppendLine($"                case \"{locName}\":");
+                    langClassBuilder.AppendLine($"                    return LocalStrings_{locName}.HasLocalization(id);");
+                }
+                langClassBuilder.AppendLine("                default:");
+                langClassBuilder.AppendLine("                    return false;");
+                langClassBuilder.AppendLine("            }");
                 langClassBuilder.AppendLine("        }");
 
                 // Finally, register the output

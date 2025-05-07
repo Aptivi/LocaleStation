@@ -51,18 +51,22 @@ namespace Localizer.DemoCJK
                     string lang = LocalStrings.Languages[i];
                     string loc = LocalStrings.Localizations[j];
                     string translated = LocalStrings.Translate(loc, lang);
-                    ListEntryWriterColor.WriteListEntry($"{lang} -> {loc}", translated, 1);
+                    bool exists = LocalStrings.Exists(loc, lang);
+                    ListEntryWriterColor.WriteListEntry($"{lang} -> {loc} [{exists}]", translated, 1);
                 }
             }
 
             // Do the invalid translation tests
             TextWriterColor.Write("\nInvalid Translations:");
             string invalid1 = LocalStrings.Translate(LocalStrings.Localizations[0], "brz");
-            ListEntryWriterColor.WriteListEntry($"brz -> {LocalStrings.Localizations[0]}", invalid1, 1);
+            bool exists1 = LocalStrings.Exists(LocalStrings.Localizations[0], "brz");
+            ListEntryWriterColor.WriteListEntry($"brz -> {LocalStrings.Localizations[0]} [{exists1}]", invalid1, 1);
             string invalid2 = LocalStrings.Translate("LOCAL_STRING", "brz");
-            ListEntryWriterColor.WriteListEntry($"brz -> LOCAL_STRING", invalid2, 1);
+            bool exists2 = LocalStrings.Exists("LOCAL_STRING", "brz");
+            ListEntryWriterColor.WriteListEntry($"brz -> LOCAL_STRING [{exists2}]", invalid2, 1);
             string invalid3 = LocalStrings.Translate("LOCAL_STRING", LocalStrings.Languages[0]);
-            ListEntryWriterColor.WriteListEntry($"{LocalStrings.Languages[0]} -> LOCAL_STRING", invalid3, 1);
+            bool exists3 = LocalStrings.Exists("LOCAL_STRING", LocalStrings.Languages[0]);
+            ListEntryWriterColor.WriteListEntry($"{LocalStrings.Languages[0]} -> LOCAL_STRING [{exists3}]", invalid3, 1);
         }
     }
 }
