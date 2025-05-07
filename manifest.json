@@ -1,8 +1,8 @@
 {
   "sitemap": {
-    "baseUrl": "https://aptivi.github.io/Localizer/"
+    "baseUrl": "https://aptivi.github.io/LocaleStation/"
   },
-  "source_base_path": "/home/runner/work/Localizer/Localizer/DocGen",
+  "source_base_path": "/home/runner/work/LocaleStation/LocaleStation/DocGen",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -15,72 +15,72 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Localizer.Generator.LocalizationGenerator.yml",
+      "source_relative_path": "api/LocaleStation.Generator.LocalizationGenerator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Localizer.Generator.LocalizationGenerator.html"
+          "relative_path": "api/LocaleStation.Generator.LocalizationGenerator.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Localizer.Generator.LocalizationGenerator",
+      "Title": "LocaleStation.Generator.LocalizationGenerator",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Localizer.Generator.yml",
+      "source_relative_path": "api/LocaleStation.Generator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Localizer.Generator.html"
+          "relative_path": "api/LocaleStation.Generator.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Localizer.Generator",
+      "Title": "LocaleStation.Generator",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Localizer.Instances.LanguageInfo.yml",
+      "source_relative_path": "api/LocaleStation.Instances.LanguageInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Localizer.Instances.LanguageInfo.html"
+          "relative_path": "api/LocaleStation.Instances.LanguageInfo.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Localizer.Instances.LanguageInfo",
+      "Title": "LocaleStation.Instances.LanguageInfo",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Localizer.Instances.LocalizationInfo.yml",
+      "source_relative_path": "api/LocaleStation.Instances.LocalizationInfo.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Localizer.Instances.LocalizationInfo.html"
+          "relative_path": "api/LocaleStation.Instances.LocalizationInfo.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Localizer.Instances.LocalizationInfo",
+      "Title": "LocaleStation.Instances.LocalizationInfo",
       "Summary": null
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Localizer.Instances.yml",
+      "source_relative_path": "api/LocaleStation.Instances.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Localizer.Instances.html"
+          "relative_path": "api/LocaleStation.Instances.html"
         }
       },
       "version": "",
       "Uid": null,
       "IsMRef": true,
-      "Title": "Localizer.Instances",
+      "Title": "LocaleStation.Instances",
       "Summary": null
     },
     {
