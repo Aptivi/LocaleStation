@@ -21,4 +21,8 @@
     <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocDisableLocalization" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Terminaux" Version="6.1.11" />
+  </ItemGroup>
+
 </Project>

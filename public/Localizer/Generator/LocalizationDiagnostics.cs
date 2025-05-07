@@ -25,5 +25,8 @@ namespace Localizer.Generator
     {
         internal static Diagnostic GetLocalizationReadErrorDiagnostic(string localizationFile) =>
             Diagnostic.Create(new DiagnosticDescriptor("APTLOC0001", "Localization file read error", $"There was a read error when trying to read the localization file {localizationFile}", "Localization", DiagnosticSeverity.Error, true), null);
+        
+        internal static Diagnostic GetLocalizationStructureErrorDiagnostic(string localizationFile) =>
+            Diagnostic.Create(new DiagnosticDescriptor("APTLOC0002", "Localization file structure error", $"There was an error when trying to deserialize the localization file {localizationFile}", "Localization", DiagnosticSeverity.Error, true), null);
     }
 }

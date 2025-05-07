@@ -17,13 +17,52 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
+using Localizer.Demos.Localized;
+using Terminaux.Writer.ConsoleWriters;
+
 namespace Localizer.Demos
 {
     internal class EntryPoint
     {
         internal static void Main()
         {
+            TextWriterColor.Write("Localized strings will appear here.\n");
 
+            // Print the list of localizations and languages
+            TextWriterColor.Write("Localizations:");
+            for (int i = 0; i < LocalStrings.Localizations.Length; i++)
+            {
+                string loc = LocalStrings.Localizations[i];
+                ListEntryWriterColor.WriteListEntry($"{i + 1}", loc, 1);
+            }
+            TextWriterColor.Write("\nLanguages:");
+            for (int i = 0; i < LocalStrings.Languages.Length; i++)
+            {
+                string loc = LocalStrings.Languages[i];
+                ListEntryWriterColor.WriteListEntry($"{i + 1}", loc, 1);
+            }
+
+            // Do the translation tests
+            TextWriterColor.Write("\nTranslations:");
+            for (int i = 0; i < LocalStrings.Languages.Length; i++)
+            {
+                for (int j = 0; j < LocalStrings.Localizations.Length; j++)
+                {
+                    string lang = LocalStrings.Languages[i];
+                    string loc = LocalStrings.Localizations[j];
+                    string translated = LocalStrings.Translate(loc, lang);
+                    ListEntryWriterColor.WriteListEntry($"{lang} -> {loc}", translated, 1);
+                }
+            }
+
+            // Do the invalid translation tests
+            TextWriterColor.Write("\nInvalid Translations:");
+            string invalid1 = LocalStrings.Translate(LocalStrings.Localizations[0], "brz");
+            ListEntryWriterColor.WriteListEntry($"brz -> {LocalStrings.Localizations[0]}", invalid1, 1);
+            string invalid2 = LocalStrings.Translate("LOCAL_STRING", "brz");
+            ListEntryWriterColor.WriteListEntry($"brz -> LOCAL_STRING", invalid2, 1);
+            string invalid3 = LocalStrings.Translate("LOCAL_STRING", LocalStrings.Languages[0]);
+            ListEntryWriterColor.WriteListEntry($"{LocalStrings.Languages[0]} -> LOCAL_STRING", invalid3, 1);
         }
     }
 }
