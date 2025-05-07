@@ -7,13 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\public\Localizer\Localizer.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\..\public\LocaleStation\LocaleStation.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 
     <PackageReference Remove="Microsoft.SourceLink.GitHub" />
   </ItemGroup>
 
   <ItemGroup>
     <AdditionalFiles Include="Resources\Languages\*.json" AptLocIsLanguagePath="true" />
+    <AdditionalFiles Include="Resources\Languages\cnt.json" AptLocIsLanguagePath="true" AptLocDisableLocalization="true" />
   </ItemGroup>
 
   <ItemGroup>

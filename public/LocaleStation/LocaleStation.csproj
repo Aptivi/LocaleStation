@@ -1,23 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <AssemblyTitle>Localizer</AssemblyTitle>
-    <AssemblyDescription>Localizer</AssemblyDescription>
+    <AssemblyTitle>LocaleStation</AssemblyTitle>
+    <AssemblyDescription>LocaleStation</AssemblyDescription>
     <Description>Language and string localization library using the JSON objects for international C# applications.</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Localizer</AssemblyName>
+    <AssemblyName>LocaleStation</AssemblyName>
     <PackageId>LocaleStation</PackageId>
     <PackageTags>library;csharp</PackageTags>
-    <PackageProjectUrl>https://github.com/Aptivi/Localizer</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Aptivi/LocaleStation</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/Aptivi/Localizer</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Aptivi/LocaleStation</RepositoryUrl>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <IncludeSymbols>false</IncludeSymbols>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageIcon>OfficialAppIcon-Localizer-512.png</PackageIcon>
+    <PackageIcon>OfficialAppIcon-LocaleStation-512.png</PackageIcon>
     <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
     <CompilerGeneratedFilesOutputPath>Generated</CompilerGeneratedFilesOutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\assets\OfficialAppIcon-Localizer-512.png">
+    <None Include="..\..\assets\OfficialAppIcon-LocaleStation-512.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

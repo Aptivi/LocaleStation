@@ -34,7 +34,7 @@
         ],
         "dest": "../docs",
         "globalMetadata": {
-            "_appTitle": "Localizer API - Aptivi",
+            "_appTitle": "LocaleStation API - Aptivi",
             "_enableSearch": true
         },
         "globalMetadataFiles": [],
@@ -47,7 +47,7 @@
         "cleanupCacheHistory": false,
         "disableGitFeatures": false,
         "sitemap": {
-            "baseUrl": "https://aptivi.github.io/Localizer/"
+            "baseUrl": "https://aptivi.github.io/LocaleStation/"
         }
     }
 }

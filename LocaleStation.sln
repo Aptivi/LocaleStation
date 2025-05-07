@@ -16,13 +16,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{3443A1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{2BDC3DD7-E0A6-4105-801E-A9B708BAB3AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localizer", "public\Localizer\Localizer.csproj", "{23DCC354-DE52-4FE9-9D5E-743D0EFA5748}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocaleStation", "public\LocaleStation\LocaleStation.csproj", "{23DCC354-DE52-4FE9-9D5E-743D0EFA5748}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildTargets", "private\BuildTargets\BuildTargets.csproj", "{B9645890-644D-153E-D2CE-A0C892177717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localizer.Demos", "private\Localizer.Demos\Localizer.Demos.csproj", "{5DA085A4-5BA7-4577-B3BF-4100291F97C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocaleStation.Demos", "private\LocaleStation.Demos\LocaleStation.Demos.csproj", "{5DA085A4-5BA7-4577-B3BF-4100291F97C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Localizer.DemoCJK", "private\Localizer.DemoCJK\Localizer.DemoCJK.csproj", "{AD493A34-DA11-F025-D5BE-A8C40711D67D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocaleStation.DemoCJK", "private\LocaleStation.DemoCJK\LocaleStation.DemoCJK.csproj", "{AD493A34-DA11-F025-D5BE-A8C40711D67D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,14 +1,14 @@
 ﻿//
-// Localizer  Copyright (C) 2025  Aptivi
+// LocaleStation  Copyright (C) 2025  Aptivi
 //
-// This file is part of Localizer
+// This file is part of LocaleStation
 //
-// Localizer is free software: you can redistribute it and/or modify
+// LocaleStation is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// Localizer is distributed in the hope that it will be useful,
+// LocaleStation is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY, without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
@@ -17,10 +17,10 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-using Localizer.DemoCJK.Localized;
+using LocaleStation.DemoCJK.Localized;
 using Terminaux.Writer.ConsoleWriters;
 
-namespace Localizer.DemoCJK
+namespace LocaleStation.DemoCJK
 {
     internal class EntryPoint
     {
