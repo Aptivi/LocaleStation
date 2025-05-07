@@ -6,7 +6,7 @@
     <Description>Language and string localization library using the JSON objects for international C# applications.</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Localizer</AssemblyName>
-    <PackageId>Localizer</PackageId>
+    <PackageId>LocaleStation</PackageId>
     <PackageTags>library;csharp</PackageTags>
     <PackageProjectUrl>https://github.com/Aptivi/Localizer</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
@@ -60,7 +60,7 @@
     <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
     <None Include="$(PkgNewtonsoft_Json)\lib\netstandard2.0\*.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
 
-    <None Update="Localizer.props" Pack="true" PackagePath="build" />
+    <None Update="LocaleStation.props" Pack="true" PackagePath="build" />
   </ItemGroup>
 
   <PropertyGroup>
