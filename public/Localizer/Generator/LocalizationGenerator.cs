@@ -43,8 +43,12 @@ namespace Localizer.Generator
                     var rootNamespace =
                         pair.Right.GlobalOptions.TryGetValue("build_property.RootNamespace", out var nameSpace) ?
                         nameSpace : "";
-                    return pair.Right.GetOptions(pair.Left).TryGetValue("build_metadata.AdditionalFiles.AptLocIsLanguagePath", out var languagePathIndicator) ?
-                        (languagePathIndicator.Equals("true", StringComparison.OrdinalIgnoreCase), pair.Left, rootNamespace) :
+                    var fileOptions = pair.Right.GetOptions(pair.Left);
+                    bool disabled =
+                        fileOptions.TryGetValue("build_metadata.AdditionalFiles.AptLocDisableLocalization", out var disabledIndicator) &&
+                        disabledIndicator.Equals("true", StringComparison.OrdinalIgnoreCase);
+                    return fileOptions.TryGetValue("build_metadata.AdditionalFiles.AptLocIsLanguagePath", out var languagePathIndicator) ?
+                        (languagePathIndicator.Equals("true", StringComparison.OrdinalIgnoreCase) && !disabled, pair.Left, rootNamespace) :
                         (false, pair.Left, rootNamespace);
                 });
 
