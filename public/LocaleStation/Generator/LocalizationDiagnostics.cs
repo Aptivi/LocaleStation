@@ -28,5 +28,8 @@ namespace LocaleStation.Generator
         
         internal static Diagnostic GetLocalizationStructureErrorDiagnostic(string localizationFile) =>
             Diagnostic.Create(new DiagnosticDescriptor("APTLOC0002", "Localization file structure error", $"There was an error when trying to deserialize the localization file {localizationFile}", "Localization", DiagnosticSeverity.Error, true), null);
+        
+        internal static Diagnostic GetLocalizationCultureNotFoundWarningDiagnostic(string cultureName, string localizationFile) =>
+            Diagnostic.Create(new DiagnosticDescriptor("APTLOC0003", $"Specified culture \"{cultureName}\" is not found", $"The localization file {localizationFile} contains an invalid culture: \"{cultureName}\". Ignoring...", "Localization", DiagnosticSeverity.Warning, true), null);
     }
 }

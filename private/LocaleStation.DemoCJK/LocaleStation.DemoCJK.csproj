@@ -4,6 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net8.0;net48</TargetFrameworks>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <AptLocDisableInvalidCultureWarnings>true</AptLocDisableInvalidCultureWarnings>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <CompilerVisibleProperty Include="AptLocDisableInvalidCultureWarnings" />
     <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocIsLanguagePath" />
     <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocDisableLocalization" />
   </ItemGroup>

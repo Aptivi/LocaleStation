@@ -1,6 +1,7 @@
 <Project>
 
     <ItemGroup>
+        <CompilerVisibleProperty Include="AptLocDisableInvalidCultureWarnings" />
         <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocIsLanguagePath" />
         <CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="AptLocDisableLocalization" />
     </ItemGroup>

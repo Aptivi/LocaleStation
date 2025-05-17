@@ -23,6 +23,8 @@ using Microsoft.CodeAnalysis.Text;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
 using System.Text;
 
 namespace LocaleStation.Generator
@@ -43,18 +45,22 @@ namespace LocaleStation.Generator
                     var rootNamespace =
                         pair.Right.GlobalOptions.TryGetValue("build_property.RootNamespace", out var nameSpace) ?
                         nameSpace : "";
+                    bool noCultureCheck =
+                        pair.Right.GlobalOptions.TryGetValue("build_property.AptLocDisableInvalidCultureWarnings", out var indicator) &&
+                        indicator.Equals("true", StringComparison.OrdinalIgnoreCase);
                     var fileOptions = pair.Right.GetOptions(pair.Left);
                     bool disabled =
                         fileOptions.TryGetValue("build_metadata.AdditionalFiles.AptLocDisableLocalization", out var disabledIndicator) &&
                         disabledIndicator.Equals("true", StringComparison.OrdinalIgnoreCase);
                     return fileOptions.TryGetValue("build_metadata.AdditionalFiles.AptLocIsLanguagePath", out var languagePathIndicator) ?
-                        (languagePathIndicator.Equals("true", StringComparison.OrdinalIgnoreCase) && !disabled, pair.Left, rootNamespace) :
-                        (false, pair.Left, rootNamespace);
+                        (languagePathIndicator.Equals("true", StringComparison.OrdinalIgnoreCase) && !disabled, pair.Left, rootNamespace, noCultureCheck) :
+                        (false, pair.Left, rootNamespace, noCultureCheck);
                 });
 
             // Register source output according to the configured language files and their metadata
             List<string> totalLanguages = [];
             List<string> totalLocalizationNames = [];
+            var cultures = CultureInfo.GetCultures(CultureTypes.AllCultures).Select((ci) => ci.Name).ToArray();
             context.RegisterSourceOutput(localizationLanguageFiles.Combine(localizationCompilation), (ctx, pair) =>
             {
                 var languageFileInfo = pair.Left;
@@ -84,6 +90,23 @@ namespace LocaleStation.Generator
                     var diag = LocalizationDiagnostics.GetLocalizationStructureErrorDiagnostic(languageFileInfo.Left.Path);
                     ctx.ReportDiagnostic(diag);
                     return;
+                }
+
+                // Ensure that the culture IDs are not malformed
+                bool noCheckCulture = languageFileInfo.noCultureCheck;
+                List<string> processedCultures = [.. localizationJson.Cultures];
+                if (!noCheckCulture)
+                {
+                    // Check the cultures
+                    foreach (var culture in localizationJson.Cultures)
+                    {
+                        if (!cultures.Contains(culture))
+                        {
+                            processedCultures.Remove(culture);
+                            var diag = LocalizationDiagnostics.GetLocalizationCultureNotFoundWarningDiagnostic(culture, languageFileInfo.Left.Path);
+                            ctx.ReportDiagnostic(diag);
+                        }
+                    }
                 }
 
                 // Get the information to build the appropriate class for each language
@@ -160,6 +183,26 @@ namespace LocaleStation.Generator
                     // Add code that detects the localization
                     langClassBuilder.Append($"                loc == \"{locName}\"");
                     if (i == processedLocalizationNames.Count - 1)
+                        langClassBuilder.AppendLine();
+                    else
+                        langClassBuilder.AppendLine(" ||");
+                }
+                langClassBuilder.AppendLine("            ;");
+                langClassBuilder.AppendLine("        }");
+
+                // Add a function that determines whether the culture is for this language or not
+                langClassBuilder.AppendLine("        internal static bool CheckCulture(string culture)");
+                langClassBuilder.AppendLine("        {");
+                langClassBuilder.AppendLine("            return");
+                if (processedCultures.Count == 0)
+                    langClassBuilder.AppendLine("                false");
+                for (int i = 0; i < processedCultures.Count; i++)
+                {
+                    var locName = processedCultures[i];
+
+                    // Add code that detects the localization
+                    langClassBuilder.Append($"                culture == \"{locName}\"");
+                    if (i == processedCultures.Count - 1)
                         langClassBuilder.AppendLine();
                     else
                         langClassBuilder.AppendLine(" ||");
@@ -268,6 +311,30 @@ namespace LocaleStation.Generator
                     // Add code that detects the localization
                     langClassBuilder.AppendLine($"                case \"{locName}\":");
                     langClassBuilder.AppendLine($"                    return LocalStrings_{locName}.HasLocalization(id);");
+                }
+                langClassBuilder.AppendLine("                default:");
+                langClassBuilder.AppendLine("                    return false;");
+                langClassBuilder.AppendLine("            }");
+                langClassBuilder.AppendLine("        }");
+
+                // Add a function that checks the culture. We don't use reflection here for AOT compatibility
+                langClassBuilder.AppendLine("        /// <summary>");
+                langClassBuilder.AppendLine("        /// Checks to see if the given culture in a specific langauge exists");
+                langClassBuilder.AppendLine("        /// </summary>");
+                langClassBuilder.AppendLine("        /// <param name=\"culture\">Culture ID</param>");
+                langClassBuilder.AppendLine("        /// <param name=\"lang\">Language to process</param>");
+                langClassBuilder.AppendLine("        /// <returns>True if exists; false otherwise</returns>");
+                langClassBuilder.AppendLine("        public static bool CheckCulture(string culture, string lang)");
+                langClassBuilder.AppendLine("        {");
+                langClassBuilder.AppendLine("            switch (lang)");
+                langClassBuilder.AppendLine("            {");
+                for (int i = 0; i < totalLanguages.Count; i++)
+                {
+                    var locName = totalLanguages[i];
+
+                    // Add code that detects the localization
+                    langClassBuilder.AppendLine($"                case \"{locName}\":");
+                    langClassBuilder.AppendLine($"                    return LocalStrings_{locName}.CheckCulture(culture);");
                 }
                 langClassBuilder.AppendLine("                default:");
                 langClassBuilder.AppendLine("                    return false;");
