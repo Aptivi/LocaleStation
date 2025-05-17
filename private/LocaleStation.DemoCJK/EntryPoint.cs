@@ -67,6 +67,34 @@ namespace LocaleStation.DemoCJK
             string invalid3 = LocalStrings.Translate("LOCAL_STRING", LocalStrings.Languages[0]);
             bool exists3 = LocalStrings.Exists("LOCAL_STRING", LocalStrings.Languages[0]);
             ListEntryWriterColor.WriteListEntry($"{LocalStrings.Languages[0]} -> LOCAL_STRING [{exists3}]", invalid3, 1);
+
+            // Perform culture tests
+            TextWriterColor.Write("\nCulture tests:");
+            bool cultureExists1 = LocalStrings.CheckCulture("en-US", LocalStrings.Languages[0]);
+            ListEntryWriterColor.WriteListEntry($"Culture exists for en-US in {LocalStrings.Languages[0]}", $"{cultureExists1}", 1);
+            bool cultureExists2 = LocalStrings.CheckCulture("pt-BR", LocalStrings.Languages[1]);
+            ListEntryWriterColor.WriteListEntry($"Culture exists for pt-BR in {LocalStrings.Languages[1]}", $"{cultureExists2}", 1);
+            bool cultureExists3 = LocalStrings.CheckCulture("pt-BR", "brz");
+            ListEntryWriterColor.WriteListEntry("Culture exists for pt-BR in brz", $"{cultureExists3}", 1);
+            bool cultureExists4 = LocalStrings.CheckCulture("en-US", "brz");
+            ListEntryWriterColor.WriteListEntry("Culture exists for en-US in brz", $"{cultureExists4}", 1);
+
+            // Language listing tests
+            TextWriterColor.Write("\nCultures and Languages:");
+            string[] languages1 = LocalStrings.ListLanguagesCulture("es-AR");
+            TextWriterColor.Write("  List of languages that contain es-AR:");
+            for (int langIdx = 0; langIdx < languages1.Length; langIdx++)
+            {
+                string language = languages1[langIdx];
+                ListEntryWriterColor.WriteListEntry($"{langIdx + 1}", language, 2);
+            }
+            string[] languages2 = LocalStrings.ListLanguagesCulture("pt-BR");
+            TextWriterColor.Write("  List of languages that contain pt-BR:");
+            for (int langIdx = 0; langIdx < languages2.Length; langIdx++)
+            {
+                string language = languages2[langIdx];
+                ListEntryWriterColor.WriteListEntry($"{langIdx + 1}", language, 2);
+            }
         }
     }
 }
