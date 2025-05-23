@@ -1,6 +1,108 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: LocaleStation.Docs.Localized
+  name: LocaleStation.Docs.Localized
+  href: api/LocaleStation.Docs.Localized.html
+  commentId: N:LocaleStation.Docs.Localized
+  fullName: LocaleStation.Docs.Localized
+  nameWithType: LocaleStation.Docs.Localized
+- uid: LocaleStation.Docs.Localized.LocalStrings
+  name: LocalStrings
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html
+  commentId: T:LocaleStation.Docs.Localized.LocalStrings
+  fullName: LocaleStation.Docs.Localized.LocalStrings
+  nameWithType: LocalStrings
+- uid: LocaleStation.Docs.Localized.LocalStrings.CheckCulture(System.String,System.String)
+  name: CheckCulture(string, string)
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_CheckCulture_System_String_System_String_
+  commentId: M:LocaleStation.Docs.Localized.LocalStrings.CheckCulture(System.String,System.String)
+  name.vb: CheckCulture(String, String)
+  fullName: LocaleStation.Docs.Localized.LocalStrings.CheckCulture(string, string)
+  fullName.vb: LocaleStation.Docs.Localized.LocalStrings.CheckCulture(String, String)
+  nameWithType: LocalStrings.CheckCulture(string, string)
+  nameWithType.vb: LocalStrings.CheckCulture(String, String)
+- uid: LocaleStation.Docs.Localized.LocalStrings.CheckCulture*
+  name: CheckCulture
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_CheckCulture_
+  commentId: Overload:LocaleStation.Docs.Localized.LocalStrings.CheckCulture
+  isSpec: "True"
+  fullName: LocaleStation.Docs.Localized.LocalStrings.CheckCulture
+  nameWithType: LocalStrings.CheckCulture
+- uid: LocaleStation.Docs.Localized.LocalStrings.Exists(System.String,System.String)
+  name: Exists(string, string)
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_Exists_System_String_System_String_
+  commentId: M:LocaleStation.Docs.Localized.LocalStrings.Exists(System.String,System.String)
+  name.vb: Exists(String, String)
+  fullName: LocaleStation.Docs.Localized.LocalStrings.Exists(string, string)
+  fullName.vb: LocaleStation.Docs.Localized.LocalStrings.Exists(String, String)
+  nameWithType: LocalStrings.Exists(string, string)
+  nameWithType.vb: LocalStrings.Exists(String, String)
+- uid: LocaleStation.Docs.Localized.LocalStrings.Exists*
+  name: Exists
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_Exists_
+  commentId: Overload:LocaleStation.Docs.Localized.LocalStrings.Exists
+  isSpec: "True"
+  fullName: LocaleStation.Docs.Localized.LocalStrings.Exists
+  nameWithType: LocalStrings.Exists
+- uid: LocaleStation.Docs.Localized.LocalStrings.Languages
+  name: Languages
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_Languages
+  commentId: P:LocaleStation.Docs.Localized.LocalStrings.Languages
+  fullName: LocaleStation.Docs.Localized.LocalStrings.Languages
+  nameWithType: LocalStrings.Languages
+- uid: LocaleStation.Docs.Localized.LocalStrings.Languages*
+  name: Languages
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_Languages_
+  commentId: Overload:LocaleStation.Docs.Localized.LocalStrings.Languages
+  isSpec: "True"
+  fullName: LocaleStation.Docs.Localized.LocalStrings.Languages
+  nameWithType: LocalStrings.Languages
+- uid: LocaleStation.Docs.Localized.LocalStrings.ListLanguagesCulture(System.String)
+  name: ListLanguagesCulture(string)
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_ListLanguagesCulture_System_String_
+  commentId: M:LocaleStation.Docs.Localized.LocalStrings.ListLanguagesCulture(System.String)
+  name.vb: ListLanguagesCulture(String)
+  fullName: LocaleStation.Docs.Localized.LocalStrings.ListLanguagesCulture(string)
+  fullName.vb: LocaleStation.Docs.Localized.LocalStrings.ListLanguagesCulture(String)
+  nameWithType: LocalStrings.ListLanguagesCulture(string)
+  nameWithType.vb: LocalStrings.ListLanguagesCulture(String)
+- uid: LocaleStation.Docs.Localized.LocalStrings.ListLanguagesCulture*
+  name: ListLanguagesCulture
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_ListLanguagesCulture_
+  commentId: Overload:LocaleStation.Docs.Localized.LocalStrings.ListLanguagesCulture
+  isSpec: "True"
+  fullName: LocaleStation.Docs.Localized.LocalStrings.ListLanguagesCulture
+  nameWithType: LocalStrings.ListLanguagesCulture
+- uid: LocaleStation.Docs.Localized.LocalStrings.Localizations
+  name: Localizations
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_Localizations
+  commentId: P:LocaleStation.Docs.Localized.LocalStrings.Localizations
+  fullName: LocaleStation.Docs.Localized.LocalStrings.Localizations
+  nameWithType: LocalStrings.Localizations
+- uid: LocaleStation.Docs.Localized.LocalStrings.Localizations*
+  name: Localizations
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_Localizations_
+  commentId: Overload:LocaleStation.Docs.Localized.LocalStrings.Localizations
+  isSpec: "True"
+  fullName: LocaleStation.Docs.Localized.LocalStrings.Localizations
+  nameWithType: LocalStrings.Localizations
+- uid: LocaleStation.Docs.Localized.LocalStrings.Translate(System.String,System.String)
+  name: Translate(string, string)
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_Translate_System_String_System_String_
+  commentId: M:LocaleStation.Docs.Localized.LocalStrings.Translate(System.String,System.String)
+  name.vb: Translate(String, String)
+  fullName: LocaleStation.Docs.Localized.LocalStrings.Translate(string, string)
+  fullName.vb: LocaleStation.Docs.Localized.LocalStrings.Translate(String, String)
+  nameWithType: LocalStrings.Translate(string, string)
+  nameWithType.vb: LocalStrings.Translate(String, String)
+- uid: LocaleStation.Docs.Localized.LocalStrings.Translate*
+  name: Translate
+  href: api/LocaleStation.Docs.Localized.LocalStrings.html#LocaleStation_Docs_Localized_LocalStrings_Translate_
+  commentId: Overload:LocaleStation.Docs.Localized.LocalStrings.Translate
+  isSpec: "True"
+  fullName: LocaleStation.Docs.Localized.LocalStrings.Translate
+  nameWithType: LocalStrings.Translate
 - uid: LocaleStation.Generator
   name: LocaleStation.Generator
   href: api/LocaleStation.Generator.html
