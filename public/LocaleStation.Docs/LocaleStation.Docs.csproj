@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <!--
+      NOTE: This project exists as a DocGen helper. Don't remove to let users review the API
+      reference for all projects that use LocaleStation.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LocaleStation\LocaleStation.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+
+    <PackageReference Remove="Microsoft.SourceLink.GitHub" />
+  </ItemGroup>
+
+</Project>
