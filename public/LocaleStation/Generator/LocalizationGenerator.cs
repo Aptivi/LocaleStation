@@ -17,6 +17,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
+using LocaleStation.Generator.Tools;
 using LocaleStation.Instances;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
@@ -120,7 +121,7 @@ namespace LocaleStation.Generator
 
                     namespace {{namespaceName}}.Localized
                     {
-                        internal static class LocalStrings_{{localizationJson.Language}}
+                        internal static class LocalStrings_{{GeneratorTools.NeutralizeName(localizationJson.Language)}}
                         {
 
                     """;
@@ -148,7 +149,7 @@ namespace LocaleStation.Generator
                     processedLocalizationNames.Add(finalLocalizationName);
                     if (!totalLocalizationNames.Contains(finalLocalizationName))
                         totalLocalizationNames.Add(finalLocalizationName);
-                    langClassBuilder.AppendLine($"        private const string {finalLocalizationName} = @\"{str.Text}\";");
+                    langClassBuilder.AppendLine($"        private const string {finalLocalizationName} = @\"{str.Text.Replace("\"", "\"\"")}\";");
                 }
                 langClassBuilder.AppendLine();
 
@@ -289,7 +290,7 @@ namespace LocaleStation.Generator
 
                     // Add code that detects the localization
                     langClassBuilder.AppendLine($"                case \"{locName}\":");
-                    langClassBuilder.AppendLine($"                    return LocalStrings_{locName}.GetLocalizedString(id);");
+                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName)}.GetLocalizedString(id);");
                 }
                 langClassBuilder.AppendLine("                default:");
                 langClassBuilder.AppendLine("                    return $\"{lang}_{id}\";");
@@ -314,7 +315,7 @@ namespace LocaleStation.Generator
 
                     // Add code that detects the localization
                     langClassBuilder.AppendLine($"                case \"{locName}\":");
-                    langClassBuilder.AppendLine($"                    return LocalStrings_{locName}.HasLocalization(id);");
+                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName)}.HasLocalization(id);");
                 }
                 langClassBuilder.AppendLine("                default:");
                 langClassBuilder.AppendLine("                    return false;");
@@ -339,7 +340,7 @@ namespace LocaleStation.Generator
 
                     // Add code that detects the localization
                     langClassBuilder.AppendLine($"                case \"{locName}\":");
-                    langClassBuilder.AppendLine($"                    return LocalStrings_{locName}.CheckCulture(culture);");
+                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName)}.CheckCulture(culture);");
                 }
                 langClassBuilder.AppendLine("                default:");
                 langClassBuilder.AppendLine("                    return false;");

@@ -1,0 +1,15 @@
+﻿{
+    "lang": "chn-t",
+    "name": "简体中文 (Latin)",
+    "cultures": [ "zh-TW" ],
+    "locs": [
+        {
+            "loc": "TEXT_HELLO_WORLD",
+            "text": "Nǐ hǎo \"QUOTE\" shìjiè!"
+        },
+        {
+            "loc": "TEXT_HI",
+            "text": "Nǐ hǎo!"
+        }
+    ]
+}
