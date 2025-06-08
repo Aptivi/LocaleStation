@@ -57,6 +57,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/LocaleStation.Generator.Tools.GeneratorTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LocaleStation.Generator.Tools.GeneratorTools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LocaleStation.Generator.Tools.GeneratorTools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LocaleStation.Generator.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LocaleStation.Generator.Tools.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "LocaleStation.Generator.Tools",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/LocaleStation.Generator.yml",
       "output": {
         ".html": {

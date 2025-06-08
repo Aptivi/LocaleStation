@@ -14,6 +14,16 @@
     "title": "Class LocalizationGenerator | LocaleStation API - Aptivi",
     "summary": "Class LocalizationGenerator Inheritance object LocalizationGenerator Namespace: LocaleStation.Generator Assembly: LocaleStation.dll Syntax [Generator] public class LocalizationGenerator Methods | Edit this page View Source Initialize(IncrementalGeneratorInitializationContext) Called to initialize the generator and register generation steps via callbacks on the context Declaration public void Initialize(IncrementalGeneratorInitializationContext context) Parameters Type Name Description IncrementalGeneratorInitializationContext context The Microsoft.CodeAnalysis.IncrementalGeneratorInitializationContext to register callbacks on"
   },
+  "api/LocaleStation.Generator.Tools.GeneratorTools.html": {
+    "href": "api/LocaleStation.Generator.Tools.GeneratorTools.html",
+    "title": "Class GeneratorTools | LocaleStation API - Aptivi",
+    "summary": "Class GeneratorTools Inheritance object GeneratorTools Namespace: LocaleStation.Generator.Tools Assembly: LocaleStation.dll Syntax public static class GeneratorTools Methods | Edit this page View Source NeutralizeName(string) Declaration public static string NeutralizeName(string name) Parameters Type Name Description string name Returns Type Description string"
+  },
+  "api/LocaleStation.Generator.Tools.html": {
+    "href": "api/LocaleStation.Generator.Tools.html",
+    "title": "Namespace LocaleStation.Generator.Tools | LocaleStation API - Aptivi",
+    "summary": "Namespace LocaleStation.Generator.Tools Classes GeneratorTools"
+  },
   "api/LocaleStation.Generator.html": {
     "href": "api/LocaleStation.Generator.html",
     "title": "Namespace LocaleStation.Generator | LocaleStation API - Aptivi",
