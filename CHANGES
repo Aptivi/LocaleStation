@@ -1,10 +1,11 @@
-This release aims to add culture-related tools.
+We have released a hotfix version to fix strings that contain double quotes in them.
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[+]` Added culture-related tools
+- `[*]` Mitigated compile errors when trying to process strings with double quotes
+- `[*]` Mitigated compile errors when trying to process short language names with forbidden characters
 
 Review the commit history if you want to get a deep insight about the changes.
 
