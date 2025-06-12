@@ -1,0 +1,18 @@
+{
+  "lang": "ltn",
+  "name": "Latin",
+  "cultures": [
+    "la",
+    "la-VA"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "Actio linguae {0} iam definita est"
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "Actio linguae {0} non definitur"
+    }
+  ]
+}

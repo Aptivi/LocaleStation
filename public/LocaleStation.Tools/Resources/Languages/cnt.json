@@ -1,0 +1,21 @@
+{
+  "lang": "cnt",
+  "name": "Chinese (Traditional)",
+  "cultures": [
+    "zh",
+    "zh-Hant",
+    "zh-Hant-HK",
+    "zh-Hant-MO",
+    "zh-Hant-TW"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "Yǔyán cāozuò {0} yǐ dìngyì"
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "yǔyán cāozuò {0} wèi dìngyì"
+    }
+  ]
+}

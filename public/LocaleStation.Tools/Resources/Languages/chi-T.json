@@ -1,0 +1,22 @@
+{
+  "lang": "chi-T",
+  "name": "Chinese (Simplified)",
+  "cultures": [
+    "zh",
+    "zh-Hans",
+    "zh-Hans-CN",
+    "zh-Hans-HK",
+    "zh-Hans-MO",
+    "zh-Hans-SG"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "语言操作 {0} 已定义"
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "语言操作 {0} 未定义"
+    }
+  ]
+}

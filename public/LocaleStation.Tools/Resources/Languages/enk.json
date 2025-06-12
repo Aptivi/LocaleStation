@@ -1,0 +1,17 @@
+{
+  "lang": "enk",
+  "name": "English (UK)",
+  "cultures": [
+    "en-GB"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "Language action {0} is already defined"
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "Language action {0} is not defined"
+    }
+  ]
+}

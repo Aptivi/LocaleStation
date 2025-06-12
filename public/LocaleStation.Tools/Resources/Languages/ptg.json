@@ -1,0 +1,28 @@
+{
+  "lang": "ptg",
+  "name": "Portuguese",
+  "cultures": [
+    "pt",
+    "pt-AO",
+    "pt-CH",
+    "pt-CV",
+    "pt-GQ",
+    "pt-GW",
+    "pt-LU",
+    "pt-MO",
+    "pt-MZ",
+    "pt-PT",
+    "pt-ST",
+    "pt-TL"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "A ação de linguagem {0} já está definida"
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "A ação de linguagem {0} não está definida"
+    }
+  ]
+}

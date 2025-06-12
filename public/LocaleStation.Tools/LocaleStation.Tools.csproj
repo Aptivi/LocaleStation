@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>LocaleStation.Tools</AssemblyTitle>
+    <AssemblyDescription>LocaleStation - Tools</AssemblyDescription>
+    <Description>
+      Language and string localization library using the JSON objects for international C# applications.
+      This is a tools library to facilitate translation and language management
+    </Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>LocaleStation.Tools</AssemblyName>
+    <PackageId>LocaleStation.Tools</PackageId>
+    <PackageTags>library;csharp</PackageTags>
+    <PackageProjectUrl>https://github.com/Aptivi/LocaleStation</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Aptivi/LocaleStation</RepositoryUrl>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageIcon>OfficialAppIcon-LocaleStation-512.png</PackageIcon>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <!-- For cross platform and .NET 8.0+ support -->
+    <AptLocDisableInvalidCultureWarnings>true</AptLocDisableInvalidCultureWarnings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\assets\OfficialAppIcon-LocaleStation-512.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LocaleStation\LocaleStation.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Resources\Languages\*.json" AptLocIsLanguagePath="true" />
+  </ItemGroup>
+
+</Project>

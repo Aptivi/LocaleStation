@@ -1,0 +1,19 @@
+{
+  "lang": "kor-T",
+  "name": "Korean",
+  "cultures": [
+    "ko",
+    "ko-KP",
+    "ko-KR"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "언어 작업 {0}이(가) 이미 정의되어 있습니다."
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "언어 작업 {0}이(가) 정의되어 있지 않습니다."
+    }
+  ]
+}

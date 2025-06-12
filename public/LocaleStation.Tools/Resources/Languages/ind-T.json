@@ -1,0 +1,18 @@
+{
+  "lang": "ind-T",
+  "name": "Hindi",
+  "cultures": [
+    "hi",
+    "hi-IN"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "भाषा क्रिया {0} पहले से परिभाषित है"
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "भाषा क्रिया {0} परिभाषित नहीं है"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "lang": "kor",
+  "name": "Korean",
+  "cultures": [
+    "ko",
+    "ko-KP",
+    "ko-KR"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "eon-eo jag-eob {0}i(ga) imi jeong-uidoeeo issseubnida."
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "eon-eo jag-eob {0}i(ga) jeong-uidoeeo issji anhseubnida."
+    }
+  ]
+}

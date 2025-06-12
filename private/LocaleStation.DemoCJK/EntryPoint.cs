@@ -18,6 +18,7 @@
 //
 
 using LocaleStation.DemoCJK.Localized;
+using LocaleStation.Tools;
 using Terminaux.Writer.ConsoleWriters;
 
 namespace LocaleStation.DemoCJK
@@ -27,6 +28,7 @@ namespace LocaleStation.DemoCJK
         internal static void Main()
         {
             TextWriterColor.Write("Localized strings will appear here.\n");
+            LanguageCommon.AddCustomAction("Demonstration", new(() => LocalStrings.Languages, () => LocalStrings.Localizations, LocalStrings.Translate, LocalStrings.CheckCulture, LocalStrings.ListLanguagesCulture, LocalStrings.Exists));
 
             // Print the list of localizations and languages
             TextWriterColor.Write("Localizations:");
@@ -50,7 +52,7 @@ namespace LocaleStation.DemoCJK
                 {
                     string lang = LocalStrings.Languages[i];
                     string loc = LocalStrings.Localizations[j];
-                    string translated = LocalStrings.Translate(loc, lang);
+                    string translated = LanguageCommon.Translate(loc, "Demonstration", lang);
                     bool exists = LocalStrings.Exists(loc, lang);
                     ListEntryWriterColor.WriteListEntry($"{lang} -> {loc} [{exists}]", translated, 1);
                 }
@@ -58,13 +60,13 @@ namespace LocaleStation.DemoCJK
 
             // Do the invalid translation tests
             TextWriterColor.Write("\nInvalid Translations:");
-            string invalid1 = LocalStrings.Translate(LocalStrings.Localizations[0], "brz");
+            string invalid1 = LanguageCommon.Translate(LocalStrings.Localizations[0], "Demonstration", "brz");
             bool exists1 = LocalStrings.Exists(LocalStrings.Localizations[0], "brz");
             ListEntryWriterColor.WriteListEntry($"brz -> {LocalStrings.Localizations[0]} [{exists1}]", invalid1, 1);
-            string invalid2 = LocalStrings.Translate("LOCAL_STRING", "brz");
+            string invalid2 = LanguageCommon.Translate("LOCAL_STRING", "Demonstration", "brz");
             bool exists2 = LocalStrings.Exists("LOCAL_STRING", "brz");
             ListEntryWriterColor.WriteListEntry($"brz -> LOCAL_STRING [{exists2}]", invalid2, 1);
-            string invalid3 = LocalStrings.Translate("LOCAL_STRING", LocalStrings.Languages[0]);
+            string invalid3 = LanguageCommon.Translate("LOCAL_STRING", "Demonstration", LocalStrings.Languages[0]);
             bool exists3 = LocalStrings.Exists("LOCAL_STRING", LocalStrings.Languages[0]);
             ListEntryWriterColor.WriteListEntry($"{LocalStrings.Languages[0]} -> LOCAL_STRING [{exists3}]", invalid3, 1);
 

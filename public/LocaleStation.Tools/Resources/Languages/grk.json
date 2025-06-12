@@ -1,0 +1,19 @@
+{
+  "lang": "grk",
+  "name": "Greek",
+  "cultures": [
+    "el",
+    "el-CY",
+    "el-GR"
+  ],
+  "locs": [
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONFOUND",
+      "text": "Η ενέργεια γλώσσας {0} έχει ήδη οριστεί"
+    },
+    {
+      "loc": "LS_TOOLS_EXCEPTION_ACTIONNOTFOUND",
+      "text": "Η ενέργεια γλώσσας {0} δεν έχει οριστεί"
+    }
+  ]
+}

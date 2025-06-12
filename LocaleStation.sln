@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocaleStation.DemoCJK", "pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocaleStation.Docs", "public\LocaleStation.Docs\LocaleStation.Docs.csproj", "{A6830F3B-445D-473F-86F6-3A0A18DC1EFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocaleStation.Tools", "public\LocaleStation.Tools\LocaleStation.Tools.csproj", "{962EAD24-DC47-496A-A28B-4AE55E395A22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{A6830F3B-445D-473F-86F6-3A0A18DC1EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6830F3B-445D-473F-86F6-3A0A18DC1EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6830F3B-445D-473F-86F6-3A0A18DC1EFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962EAD24-DC47-496A-A28B-4AE55E395A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962EAD24-DC47-496A-A28B-4AE55E395A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962EAD24-DC47-496A-A28B-4AE55E395A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962EAD24-DC47-496A-A28B-4AE55E395A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{5DA085A4-5BA7-4577-B3BF-4100291F97C9} = {2BDC3DD7-E0A6-4105-801E-A9B708BAB3AE}
 		{AD493A34-DA11-F025-D5BE-A8C40711D67D} = {2BDC3DD7-E0A6-4105-801E-A9B708BAB3AE}
 		{A6830F3B-445D-473F-86F6-3A0A18DC1EFC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{962EAD24-DC47-496A-A28B-4AE55E395A22} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {82EDD14F-D4C2-46B9-9161-8C4CC9E18A0C}
