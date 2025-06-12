@@ -252,3 +252,363 @@ references:
   isSpec: "True"
   fullName: LocaleStation.Instances.LocalizationInfo.Text
   nameWithType: LocalizationInfo.Text
+- uid: LocaleStation.Tools
+  name: LocaleStation.Tools
+  href: api/LocaleStation.Tools.html
+  commentId: N:LocaleStation.Tools
+  fullName: LocaleStation.Tools
+  nameWithType: LocaleStation.Tools
+- uid: LocaleStation.Tools.LanguageCommon
+  name: LanguageCommon
+  href: api/LocaleStation.Tools.LanguageCommon.html
+  commentId: T:LocaleStation.Tools.LanguageCommon
+  fullName: LocaleStation.Tools.LanguageCommon
+  nameWithType: LanguageCommon
+- uid: LocaleStation.Tools.LanguageCommon.AddCustomAction(System.String,LocaleStation.Tools.LanguageLocalActions)
+  name: AddCustomAction(string, LanguageLocalActions)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_AddCustomAction_System_String_LocaleStation_Tools_LanguageLocalActions_
+  commentId: M:LocaleStation.Tools.LanguageCommon.AddCustomAction(System.String,LocaleStation.Tools.LanguageLocalActions)
+  name.vb: AddCustomAction(String, LanguageLocalActions)
+  fullName: LocaleStation.Tools.LanguageCommon.AddCustomAction(string, LocaleStation.Tools.LanguageLocalActions)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.AddCustomAction(String, LocaleStation.Tools.LanguageLocalActions)
+  nameWithType: LanguageCommon.AddCustomAction(string, LanguageLocalActions)
+  nameWithType.vb: LanguageCommon.AddCustomAction(String, LanguageLocalActions)
+- uid: LocaleStation.Tools.LanguageCommon.AddCustomAction*
+  name: AddCustomAction
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_AddCustomAction_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.AddCustomAction
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.AddCustomAction
+  nameWithType: LanguageCommon.AddCustomAction
+- uid: LocaleStation.Tools.LanguageCommon.GetAction(System.String)
+  name: GetAction(string)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_GetAction_System_String_
+  commentId: M:LocaleStation.Tools.LanguageCommon.GetAction(System.String)
+  name.vb: GetAction(String)
+  fullName: LocaleStation.Tools.LanguageCommon.GetAction(string)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.GetAction(String)
+  nameWithType: LanguageCommon.GetAction(string)
+  nameWithType.vb: LanguageCommon.GetAction(String)
+- uid: LocaleStation.Tools.LanguageCommon.GetAction*
+  name: GetAction
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_GetAction_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.GetAction
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.GetAction
+  nameWithType: LanguageCommon.GetAction
+- uid: LocaleStation.Tools.LanguageCommon.GetInferredLanguage(System.String)
+  name: GetInferredLanguage(string)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_GetInferredLanguage_System_String_
+  commentId: M:LocaleStation.Tools.LanguageCommon.GetInferredLanguage(System.String)
+  name.vb: GetInferredLanguage(String)
+  fullName: LocaleStation.Tools.LanguageCommon.GetInferredLanguage(string)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.GetInferredLanguage(String)
+  nameWithType: LanguageCommon.GetInferredLanguage(string)
+  nameWithType.vb: LanguageCommon.GetInferredLanguage(String)
+- uid: LocaleStation.Tools.LanguageCommon.GetInferredLanguage*
+  name: GetInferredLanguage
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_GetInferredLanguage_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.GetInferredLanguage
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.GetInferredLanguage
+  nameWithType: LanguageCommon.GetInferredLanguage
+- uid: LocaleStation.Tools.LanguageCommon.GetInferredLanguages(System.String)
+  name: GetInferredLanguages(string)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_GetInferredLanguages_System_String_
+  commentId: M:LocaleStation.Tools.LanguageCommon.GetInferredLanguages(System.String)
+  name.vb: GetInferredLanguages(String)
+  fullName: LocaleStation.Tools.LanguageCommon.GetInferredLanguages(string)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.GetInferredLanguages(String)
+  nameWithType: LanguageCommon.GetInferredLanguages(string)
+  nameWithType.vb: LanguageCommon.GetInferredLanguages(String)
+- uid: LocaleStation.Tools.LanguageCommon.GetInferredLanguages*
+  name: GetInferredLanguages
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_GetInferredLanguages_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.GetInferredLanguages
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.GetInferredLanguages
+  nameWithType: LanguageCommon.GetInferredLanguages
+- uid: LocaleStation.Tools.LanguageCommon.IsCustomActionDefined(System.String)
+  name: IsCustomActionDefined(string)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_IsCustomActionDefined_System_String_
+  commentId: M:LocaleStation.Tools.LanguageCommon.IsCustomActionDefined(System.String)
+  name.vb: IsCustomActionDefined(String)
+  fullName: LocaleStation.Tools.LanguageCommon.IsCustomActionDefined(string)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.IsCustomActionDefined(String)
+  nameWithType: LanguageCommon.IsCustomActionDefined(string)
+  nameWithType.vb: LanguageCommon.IsCustomActionDefined(String)
+- uid: LocaleStation.Tools.LanguageCommon.IsCustomActionDefined*
+  name: IsCustomActionDefined
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_IsCustomActionDefined_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.IsCustomActionDefined
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.IsCustomActionDefined
+  nameWithType: LanguageCommon.IsCustomActionDefined
+- uid: LocaleStation.Tools.LanguageCommon.Language
+  name: Language
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_Language
+  commentId: P:LocaleStation.Tools.LanguageCommon.Language
+  fullName: LocaleStation.Tools.LanguageCommon.Language
+  nameWithType: LanguageCommon.Language
+- uid: LocaleStation.Tools.LanguageCommon.Language*
+  name: Language
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_Language_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.Language
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.Language
+  nameWithType: LanguageCommon.Language
+- uid: LocaleStation.Tools.LanguageCommon.RemoveCustomAction(System.String)
+  name: RemoveCustomAction(string)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_RemoveCustomAction_System_String_
+  commentId: M:LocaleStation.Tools.LanguageCommon.RemoveCustomAction(System.String)
+  name.vb: RemoveCustomAction(String)
+  fullName: LocaleStation.Tools.LanguageCommon.RemoveCustomAction(string)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.RemoveCustomAction(String)
+  nameWithType: LanguageCommon.RemoveCustomAction(string)
+  nameWithType.vb: LanguageCommon.RemoveCustomAction(String)
+- uid: LocaleStation.Tools.LanguageCommon.RemoveCustomAction*
+  name: RemoveCustomAction
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_RemoveCustomAction_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.RemoveCustomAction
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.RemoveCustomAction
+  nameWithType: LanguageCommon.RemoveCustomAction
+- uid: LocaleStation.Tools.LanguageCommon.Translate(System.String)
+  name: Translate(string)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_Translate_System_String_
+  commentId: M:LocaleStation.Tools.LanguageCommon.Translate(System.String)
+  name.vb: Translate(String)
+  fullName: LocaleStation.Tools.LanguageCommon.Translate(string)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.Translate(String)
+  nameWithType: LanguageCommon.Translate(string)
+  nameWithType.vb: LanguageCommon.Translate(String)
+- uid: LocaleStation.Tools.LanguageCommon.Translate(System.String,System.String)
+  name: Translate(string, string)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_Translate_System_String_System_String_
+  commentId: M:LocaleStation.Tools.LanguageCommon.Translate(System.String,System.String)
+  name.vb: Translate(String, String)
+  fullName: LocaleStation.Tools.LanguageCommon.Translate(string, string)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.Translate(String, String)
+  nameWithType: LanguageCommon.Translate(string, string)
+  nameWithType.vb: LanguageCommon.Translate(String, String)
+- uid: LocaleStation.Tools.LanguageCommon.Translate(System.String,System.String,System.String)
+  name: Translate(string, string, string)
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_Translate_System_String_System_String_System_String_
+  commentId: M:LocaleStation.Tools.LanguageCommon.Translate(System.String,System.String,System.String)
+  name.vb: Translate(String, String, String)
+  fullName: LocaleStation.Tools.LanguageCommon.Translate(string, string, string)
+  fullName.vb: LocaleStation.Tools.LanguageCommon.Translate(String, String, String)
+  nameWithType: LanguageCommon.Translate(string, string, string)
+  nameWithType.vb: LanguageCommon.Translate(String, String, String)
+- uid: LocaleStation.Tools.LanguageCommon.Translate*
+  name: Translate
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_Translate_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.Translate
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.Translate
+  nameWithType: LanguageCommon.Translate
+- uid: LocaleStation.Tools.LanguageLocalActions
+  name: LanguageLocalActions
+  href: api/LocaleStation.Tools.LanguageLocalActions.html
+  commentId: T:LocaleStation.Tools.LanguageLocalActions
+  fullName: LocaleStation.Tools.LanguageLocalActions
+  nameWithType: LanguageLocalActions
+- uid: LocaleStation.Tools.LanguageLocalActions.#ctor(System.Func{System.String[]},System.Func{System.String[]},System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean},System.Func{System.String,System.String[]},System.Func{System.String,System.String,System.Boolean})
+  name: LanguageLocalActions(Func<string[]>, Func<string[]>, Func<string, string, string>, Func<string, string, bool>, Func<string, string[]>, Func<string, string, bool>)
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions__ctor_System_Func_System_String____System_Func_System_String____System_Func_System_String_System_String_System_String__System_Func_System_String_System_String_System_Boolean__System_Func_System_String_System_String____System_Func_System_String_System_String_System_Boolean__
+  commentId: M:LocaleStation.Tools.LanguageLocalActions.#ctor(System.Func{System.String[]},System.Func{System.String[]},System.Func{System.String,System.String,System.String},System.Func{System.String,System.String,System.Boolean},System.Func{System.String,System.String[]},System.Func{System.String,System.String,System.Boolean})
+  name.vb: New(Func(Of String()), Func(Of String()), Func(Of String, String, String), Func(Of String, String, Boolean), Func(Of String, String()), Func(Of String, String, Boolean))
+  fullName: LocaleStation.Tools.LanguageLocalActions.LanguageLocalActions(System.Func<string[]>, System.Func<string[]>, System.Func<string, string, string>, System.Func<string, string, bool>, System.Func<string, string[]>, System.Func<string, string, bool>)
+  fullName.vb: LocaleStation.Tools.LanguageLocalActions.New(System.Func(Of String()), System.Func(Of String()), System.Func(Of String, String, String), System.Func(Of String, String, Boolean), System.Func(Of String, String()), System.Func(Of String, String, Boolean))
+  nameWithType: LanguageLocalActions.LanguageLocalActions(Func<string[]>, Func<string[]>, Func<string, string, string>, Func<string, string, bool>, Func<string, string[]>, Func<string, string, bool>)
+  nameWithType.vb: LanguageLocalActions.New(Func(Of String()), Func(Of String()), Func(Of String, String, String), Func(Of String, String, Boolean), Func(Of String, String()), Func(Of String, String, Boolean))
+- uid: LocaleStation.Tools.LanguageLocalActions.#ctor*
+  name: LanguageLocalActions
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions__ctor_
+  commentId: Overload:LocaleStation.Tools.LanguageLocalActions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: LocaleStation.Tools.LanguageLocalActions.LanguageLocalActions
+  fullName.vb: LocaleStation.Tools.LanguageLocalActions.New
+  nameWithType: LanguageLocalActions.LanguageLocalActions
+  nameWithType.vb: LanguageLocalActions.New
+- uid: LocaleStation.Tools.LanguageLocalActions.CheckCulture
+  name: CheckCulture
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_CheckCulture
+  commentId: P:LocaleStation.Tools.LanguageLocalActions.CheckCulture
+  fullName: LocaleStation.Tools.LanguageLocalActions.CheckCulture
+  nameWithType: LanguageLocalActions.CheckCulture
+- uid: LocaleStation.Tools.LanguageLocalActions.CheckCulture*
+  name: CheckCulture
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_CheckCulture_
+  commentId: Overload:LocaleStation.Tools.LanguageLocalActions.CheckCulture
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageLocalActions.CheckCulture
+  nameWithType: LanguageLocalActions.CheckCulture
+- uid: LocaleStation.Tools.LanguageLocalActions.Exists
+  name: Exists
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_Exists
+  commentId: P:LocaleStation.Tools.LanguageLocalActions.Exists
+  fullName: LocaleStation.Tools.LanguageLocalActions.Exists
+  nameWithType: LanguageLocalActions.Exists
+- uid: LocaleStation.Tools.LanguageLocalActions.Exists*
+  name: Exists
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_Exists_
+  commentId: Overload:LocaleStation.Tools.LanguageLocalActions.Exists
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageLocalActions.Exists
+  nameWithType: LanguageLocalActions.Exists
+- uid: LocaleStation.Tools.LanguageLocalActions.GetLanguages
+  name: GetLanguages
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_GetLanguages
+  commentId: P:LocaleStation.Tools.LanguageLocalActions.GetLanguages
+  fullName: LocaleStation.Tools.LanguageLocalActions.GetLanguages
+  nameWithType: LanguageLocalActions.GetLanguages
+- uid: LocaleStation.Tools.LanguageLocalActions.GetLanguages*
+  name: GetLanguages
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_GetLanguages_
+  commentId: Overload:LocaleStation.Tools.LanguageLocalActions.GetLanguages
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageLocalActions.GetLanguages
+  nameWithType: LanguageLocalActions.GetLanguages
+- uid: LocaleStation.Tools.LanguageLocalActions.GetLocalizations
+  name: GetLocalizations
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_GetLocalizations
+  commentId: P:LocaleStation.Tools.LanguageLocalActions.GetLocalizations
+  fullName: LocaleStation.Tools.LanguageLocalActions.GetLocalizations
+  nameWithType: LanguageLocalActions.GetLocalizations
+- uid: LocaleStation.Tools.LanguageLocalActions.GetLocalizations*
+  name: GetLocalizations
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_GetLocalizations_
+  commentId: Overload:LocaleStation.Tools.LanguageLocalActions.GetLocalizations
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageLocalActions.GetLocalizations
+  nameWithType: LanguageLocalActions.GetLocalizations
+- uid: LocaleStation.Tools.LanguageLocalActions.ListLanguagesCulture
+  name: ListLanguagesCulture
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_ListLanguagesCulture
+  commentId: P:LocaleStation.Tools.LanguageLocalActions.ListLanguagesCulture
+  fullName: LocaleStation.Tools.LanguageLocalActions.ListLanguagesCulture
+  nameWithType: LanguageLocalActions.ListLanguagesCulture
+- uid: LocaleStation.Tools.LanguageLocalActions.ListLanguagesCulture*
+  name: ListLanguagesCulture
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_ListLanguagesCulture_
+  commentId: Overload:LocaleStation.Tools.LanguageLocalActions.ListLanguagesCulture
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageLocalActions.ListLanguagesCulture
+  nameWithType: LanguageLocalActions.ListLanguagesCulture
+- uid: LocaleStation.Tools.LanguageLocalActions.Translate
+  name: Translate
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_Translate
+  commentId: P:LocaleStation.Tools.LanguageLocalActions.Translate
+  fullName: LocaleStation.Tools.LanguageLocalActions.Translate
+  nameWithType: LanguageLocalActions.Translate
+- uid: LocaleStation.Tools.LanguageLocalActions.Translate*
+  name: Translate
+  href: api/LocaleStation.Tools.LanguageLocalActions.html#LocaleStation_Tools_LanguageLocalActions_Translate_
+  commentId: Overload:LocaleStation.Tools.LanguageLocalActions.Translate
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageLocalActions.Translate
+  nameWithType: LanguageLocalActions.Translate
+- uid: LocaleStation.Tools.Localized
+  name: LocaleStation.Tools.Localized
+  href: api/LocaleStation.Tools.Localized.html
+  commentId: N:LocaleStation.Tools.Localized
+  fullName: LocaleStation.Tools.Localized
+  nameWithType: LocaleStation.Tools.Localized
+- uid: LocaleStation.Tools.Localized.LocalStrings
+  name: LocalStrings
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html
+  commentId: T:LocaleStation.Tools.Localized.LocalStrings
+  fullName: LocaleStation.Tools.Localized.LocalStrings
+  nameWithType: LocalStrings
+- uid: LocaleStation.Tools.Localized.LocalStrings.CheckCulture(System.String,System.String)
+  name: CheckCulture(string, string)
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_CheckCulture_System_String_System_String_
+  commentId: M:LocaleStation.Tools.Localized.LocalStrings.CheckCulture(System.String,System.String)
+  name.vb: CheckCulture(String, String)
+  fullName: LocaleStation.Tools.Localized.LocalStrings.CheckCulture(string, string)
+  fullName.vb: LocaleStation.Tools.Localized.LocalStrings.CheckCulture(String, String)
+  nameWithType: LocalStrings.CheckCulture(string, string)
+  nameWithType.vb: LocalStrings.CheckCulture(String, String)
+- uid: LocaleStation.Tools.Localized.LocalStrings.CheckCulture*
+  name: CheckCulture
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_CheckCulture_
+  commentId: Overload:LocaleStation.Tools.Localized.LocalStrings.CheckCulture
+  isSpec: "True"
+  fullName: LocaleStation.Tools.Localized.LocalStrings.CheckCulture
+  nameWithType: LocalStrings.CheckCulture
+- uid: LocaleStation.Tools.Localized.LocalStrings.Exists(System.String,System.String)
+  name: Exists(string, string)
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_Exists_System_String_System_String_
+  commentId: M:LocaleStation.Tools.Localized.LocalStrings.Exists(System.String,System.String)
+  name.vb: Exists(String, String)
+  fullName: LocaleStation.Tools.Localized.LocalStrings.Exists(string, string)
+  fullName.vb: LocaleStation.Tools.Localized.LocalStrings.Exists(String, String)
+  nameWithType: LocalStrings.Exists(string, string)
+  nameWithType.vb: LocalStrings.Exists(String, String)
+- uid: LocaleStation.Tools.Localized.LocalStrings.Exists*
+  name: Exists
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_Exists_
+  commentId: Overload:LocaleStation.Tools.Localized.LocalStrings.Exists
+  isSpec: "True"
+  fullName: LocaleStation.Tools.Localized.LocalStrings.Exists
+  nameWithType: LocalStrings.Exists
+- uid: LocaleStation.Tools.Localized.LocalStrings.Languages
+  name: Languages
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_Languages
+  commentId: P:LocaleStation.Tools.Localized.LocalStrings.Languages
+  fullName: LocaleStation.Tools.Localized.LocalStrings.Languages
+  nameWithType: LocalStrings.Languages
+- uid: LocaleStation.Tools.Localized.LocalStrings.Languages*
+  name: Languages
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_Languages_
+  commentId: Overload:LocaleStation.Tools.Localized.LocalStrings.Languages
+  isSpec: "True"
+  fullName: LocaleStation.Tools.Localized.LocalStrings.Languages
+  nameWithType: LocalStrings.Languages
+- uid: LocaleStation.Tools.Localized.LocalStrings.ListLanguagesCulture(System.String)
+  name: ListLanguagesCulture(string)
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_ListLanguagesCulture_System_String_
+  commentId: M:LocaleStation.Tools.Localized.LocalStrings.ListLanguagesCulture(System.String)
+  name.vb: ListLanguagesCulture(String)
+  fullName: LocaleStation.Tools.Localized.LocalStrings.ListLanguagesCulture(string)
+  fullName.vb: LocaleStation.Tools.Localized.LocalStrings.ListLanguagesCulture(String)
+  nameWithType: LocalStrings.ListLanguagesCulture(string)
+  nameWithType.vb: LocalStrings.ListLanguagesCulture(String)
+- uid: LocaleStation.Tools.Localized.LocalStrings.ListLanguagesCulture*
+  name: ListLanguagesCulture
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_ListLanguagesCulture_
+  commentId: Overload:LocaleStation.Tools.Localized.LocalStrings.ListLanguagesCulture
+  isSpec: "True"
+  fullName: LocaleStation.Tools.Localized.LocalStrings.ListLanguagesCulture
+  nameWithType: LocalStrings.ListLanguagesCulture
+- uid: LocaleStation.Tools.Localized.LocalStrings.Localizations
+  name: Localizations
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_Localizations
+  commentId: P:LocaleStation.Tools.Localized.LocalStrings.Localizations
+  fullName: LocaleStation.Tools.Localized.LocalStrings.Localizations
+  nameWithType: LocalStrings.Localizations
+- uid: LocaleStation.Tools.Localized.LocalStrings.Localizations*
+  name: Localizations
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_Localizations_
+  commentId: Overload:LocaleStation.Tools.Localized.LocalStrings.Localizations
+  isSpec: "True"
+  fullName: LocaleStation.Tools.Localized.LocalStrings.Localizations
+  nameWithType: LocalStrings.Localizations
+- uid: LocaleStation.Tools.Localized.LocalStrings.Translate(System.String,System.String)
+  name: Translate(string, string)
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_Translate_System_String_System_String_
+  commentId: M:LocaleStation.Tools.Localized.LocalStrings.Translate(System.String,System.String)
+  name.vb: Translate(String, String)
+  fullName: LocaleStation.Tools.Localized.LocalStrings.Translate(string, string)
+  fullName.vb: LocaleStation.Tools.Localized.LocalStrings.Translate(String, String)
+  nameWithType: LocalStrings.Translate(string, string)
+  nameWithType.vb: LocalStrings.Translate(String, String)
+- uid: LocaleStation.Tools.Localized.LocalStrings.Translate*
+  name: Translate
+  href: api/LocaleStation.Tools.Localized.LocalStrings.html#LocaleStation_Tools_Localized_LocalStrings_Translate_
+  commentId: Overload:LocaleStation.Tools.Localized.LocalStrings.Translate
+  isSpec: "True"
+  fullName: LocaleStation.Tools.Localized.LocalStrings.Translate
+  nameWithType: LocalStrings.Translate
