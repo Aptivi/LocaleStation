@@ -1,11 +1,10 @@
-We have released a hotfix version to fix strings that contain double quotes in them.
+We have released a new version of LocaleStation to add new tools for languages
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[*]` Mitigated compile errors when trying to process strings with double quotes
-- `[*]` Mitigated compile errors when trying to process short language names with forbidden characters
+- `[+]` Added new language tools
 
 Review the commit history if you want to get a deep insight about the changes.
 
