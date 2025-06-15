@@ -19,6 +19,7 @@
 
 using LocaleStation.Demos.Localized;
 using LocaleStation.Tools;
+using System.Linq;
 using Terminaux.Writer.ConsoleWriters;
 
 namespace LocaleStation.Demos
@@ -38,19 +39,19 @@ namespace LocaleStation.Demos
                 ListEntryWriterColor.WriteListEntry($"{i + 1}", loc, 1);
             }
             TextWriterColor.Write("\nLanguages:");
-            for (int i = 0; i < LocalStrings.Languages.Length; i++)
+            for (int i = 0; i < LocalStrings.Languages.Count; i++)
             {
-                string loc = LocalStrings.Languages[i];
+                string loc = LocalStrings.Languages.ElementAt(i).Key;
                 ListEntryWriterColor.WriteListEntry($"{i + 1}", loc, 1);
             }
 
             // Do the translation tests
             TextWriterColor.Write("\nTranslations:");
-            for (int i = 0; i < LocalStrings.Languages.Length; i++)
+            for (int i = 0; i < LocalStrings.Languages.Count; i++)
             {
                 for (int j = 0; j < LocalStrings.Localizations.Length; j++)
                 {
-                    string lang = LocalStrings.Languages[i];
+                    string lang = LocalStrings.Languages.ElementAt(i).Key;
                     string loc = LocalStrings.Localizations[j];
                     string translated = LanguageCommon.Translate(loc, "Demonstration", lang);
                     bool exists = LocalStrings.Exists(loc, lang);
@@ -66,16 +67,16 @@ namespace LocaleStation.Demos
             string invalid2 = LanguageCommon.Translate("LOCAL_STRING", "Demonstration", "brz");
             bool exists2 = LocalStrings.Exists("LOCAL_STRING", "brz");
             ListEntryWriterColor.WriteListEntry($"brz -> LOCAL_STRING [{exists2}]", invalid2, 1);
-            string invalid3 = LanguageCommon.Translate("LOCAL_STRING", "Demonstration", LocalStrings.Languages[0]);
-            bool exists3 = LocalStrings.Exists("LOCAL_STRING", LocalStrings.Languages[0]);
-            ListEntryWriterColor.WriteListEntry($"{LocalStrings.Languages[0]} -> LOCAL_STRING [{exists3}]", invalid3, 1);
+            string invalid3 = LanguageCommon.Translate("LOCAL_STRING", "Demonstration", LocalStrings.Languages.ElementAt(0).Key);
+            bool exists3 = LocalStrings.Exists("LOCAL_STRING", LocalStrings.Languages.ElementAt(0).Key);
+            ListEntryWriterColor.WriteListEntry($"{LocalStrings.Languages.ElementAt(0).Key} -> LOCAL_STRING [{exists3}]", invalid3, 1);
 
             // Perform culture tests
             TextWriterColor.Write("\nCulture tests:");
-            bool cultureExists1 = LocalStrings.CheckCulture("en-US", LocalStrings.Languages[0]);
-            ListEntryWriterColor.WriteListEntry($"Culture exists for en-US in {LocalStrings.Languages[0]}", $"{cultureExists1}", 1);
-            bool cultureExists2 = LocalStrings.CheckCulture("pt-BR", LocalStrings.Languages[1]);
-            ListEntryWriterColor.WriteListEntry($"Culture exists for pt-BR in {LocalStrings.Languages[1]}", $"{cultureExists2}", 1);
+            bool cultureExists1 = LocalStrings.CheckCulture("en-US", LocalStrings.Languages.ElementAt(0).Key);
+            ListEntryWriterColor.WriteListEntry($"Culture exists for en-US in {LocalStrings.Languages.ElementAt(0).Key}", $"{cultureExists1}", 1);
+            bool cultureExists2 = LocalStrings.CheckCulture("pt-BR", LocalStrings.Languages.ElementAt(1).Key);
+            ListEntryWriterColor.WriteListEntry($"Culture exists for pt-BR in {LocalStrings.Languages.ElementAt(1).Key}", $"{cultureExists2}", 1);
             bool cultureExists3 = LocalStrings.CheckCulture("pt-BR", "brz");
             ListEntryWriterColor.WriteListEntry("Culture exists for pt-BR in brz", $"{cultureExists3}", 1);
             bool cultureExists4 = LocalStrings.CheckCulture("en-US", "brz");

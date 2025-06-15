@@ -59,7 +59,7 @@ namespace LocaleStation.Generator
                 });
 
             // Register source output according to the configured language files and their metadata
-            List<string> totalLanguages = [];
+            Dictionary<string, string> totalLanguages = [];
             List<string> totalLocalizationNames = [];
             var cultures = CultureInfo.GetCultures(CultureTypes.AllCultures).Select((ci) => ci.Name).ToArray();
             context.RegisterSourceOutput(localizationLanguageFiles.Combine(localizationCompilation), (ctx, pair) =>
@@ -131,8 +131,8 @@ namespace LocaleStation.Generator
                     }
                     """;
                 var langClassBuilder = new StringBuilder(header);
-                if (!totalLanguages.Contains(localizationJson.Language))
-                    totalLanguages.Add(localizationJson.Language);
+                if (!totalLanguages.ContainsKey(localizationJson.Language))
+                    totalLanguages.Add(localizationJson.Language, localizationJson.Name);
 
                 // First, convert the individual strings to their compilable representations using constant fields
                 var strings = localizationJson.Localizations;
@@ -255,10 +255,10 @@ namespace LocaleStation.Generator
                 langClassBuilder.AppendLine("        /// <summary>");
                 langClassBuilder.AppendLine("        /// Queries the languages");
                 langClassBuilder.AppendLine("        /// </summary>");
-                langClassBuilder.AppendLine("        public static string[] Languages => new string[]");
+                langClassBuilder.AppendLine("        public static Dictionary<string, string> Languages => new Dictionary<string, string>");
                 langClassBuilder.AppendLine("        {");
                 foreach (var lang in totalLanguages)
-                    langClassBuilder.AppendLine($"            \"{lang}\",");
+                    langClassBuilder.AppendLine($"            {{ \"{lang.Key}\", \"{lang.Value}\" }},");
                 langClassBuilder.AppendLine("        };");
                 langClassBuilder.AppendLine();
 
@@ -284,13 +284,11 @@ namespace LocaleStation.Generator
                 langClassBuilder.AppendLine("        {");
                 langClassBuilder.AppendLine("            switch (lang)");
                 langClassBuilder.AppendLine("            {");
-                for (int i = 0; i < totalLanguages.Count; i++)
+                foreach (var locName in totalLanguages)
                 {
-                    var locName = totalLanguages[i];
-
-                    // Add code that detects the localization
-                    langClassBuilder.AppendLine($"                case \"{locName}\":");
-                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName)}.GetLocalizedString(id);");
+                    // Add code that performs the localization
+                    langClassBuilder.AppendLine($"                case \"{locName.Key}\":");
+                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName.Key)}.GetLocalizedString(id);");
                 }
                 langClassBuilder.AppendLine("                default:");
                 langClassBuilder.AppendLine("                    return $\"{lang}_{id}\";");
@@ -309,13 +307,11 @@ namespace LocaleStation.Generator
                 langClassBuilder.AppendLine("        {");
                 langClassBuilder.AppendLine("            switch (lang)");
                 langClassBuilder.AppendLine("            {");
-                for (int i = 0; i < totalLanguages.Count; i++)
+                foreach (var locName in totalLanguages)
                 {
-                    var locName = totalLanguages[i];
-
                     // Add code that detects the localization
-                    langClassBuilder.AppendLine($"                case \"{locName}\":");
-                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName)}.HasLocalization(id);");
+                    langClassBuilder.AppendLine($"                case \"{locName.Key}\":");
+                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName.Key)}.HasLocalization(id);");
                 }
                 langClassBuilder.AppendLine("                default:");
                 langClassBuilder.AppendLine("                    return false;");
@@ -334,13 +330,11 @@ namespace LocaleStation.Generator
                 langClassBuilder.AppendLine("        {");
                 langClassBuilder.AppendLine("            switch (lang)");
                 langClassBuilder.AppendLine("            {");
-                for (int i = 0; i < totalLanguages.Count; i++)
+                foreach (var locName in totalLanguages)
                 {
-                    var locName = totalLanguages[i];
-
-                    // Add code that detects the localization
-                    langClassBuilder.AppendLine($"                case \"{locName}\":");
-                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName)}.CheckCulture(culture);");
+                    // Add code that checks for culture
+                    langClassBuilder.AppendLine($"                case \"{locName.Key}\":");
+                    langClassBuilder.AppendLine($"                    return LocalStrings_{GeneratorTools.NeutralizeName(locName.Key)}.CheckCulture(culture);");
                 }
                 langClassBuilder.AppendLine("                default:");
                 langClassBuilder.AppendLine("                    return false;");
@@ -359,8 +353,8 @@ namespace LocaleStation.Generator
                 langClassBuilder.AppendLine("            List<string> processedLanguages = new List<string>();");
                 langClassBuilder.AppendLine("            foreach (var lang in Languages)");
                 langClassBuilder.AppendLine("            {");
-                langClassBuilder.AppendLine("                if (CheckCulture(culture, lang))");
-                langClassBuilder.AppendLine("                    processedLanguages.Add(lang);");
+                langClassBuilder.AppendLine("                if (CheckCulture(culture, lang.Key))");
+                langClassBuilder.AppendLine("                    processedLanguages.Add(lang.Key);");
                 langClassBuilder.AppendLine("            }");
                 langClassBuilder.AppendLine("            return processedLanguages.ToArray();");
                 langClassBuilder.AppendLine("        }");

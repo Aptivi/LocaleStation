@@ -18,6 +18,7 @@
 //
 
 using System;
+using System.Collections.Generic;
 
 namespace LocaleStation.Tools
 {
@@ -26,7 +27,7 @@ namespace LocaleStation.Tools
     /// </summary>
     public class LanguageLocalActions
     {
-        private readonly Func<string[]> getLanguages = () => [];
+        private readonly Func<Dictionary<string, string>> getLanguages = () => [];
         private readonly Func<string[]> getLocalizations = () => [];
         private readonly Func<string, string, string> translate = (_, _) => "";
         private readonly Func<string, string, bool> checkCulture = (_, _) => false;
@@ -36,7 +37,7 @@ namespace LocaleStation.Tools
         /// <summary>
         /// Queries the languages
         /// </summary>
-        public Func<string[]> GetLanguages =>
+        public Func<Dictionary<string, string>> GetLanguages =>
             getLanguages;
 
         /// <summary>
@@ -78,7 +79,7 @@ namespace LocaleStation.Tools
         /// <param name="checkCulture">Checks to see if the given culture in a specified language exists</param>
         /// <param name="listLanguagesCulture">Lists languages in a given culture</param>
         /// <param name="exists">Checks to see if the given string using the string ID in a specific language exists</param>
-        public LanguageLocalActions(Func<string[]> getLanguages, Func<string[]> getLocalizations, Func<string, string, string> translate, Func<string, string, bool> checkCulture, Func<string, string[]> listLanguagesCulture, Func<string, string, bool> exists)
+        public LanguageLocalActions(Func<Dictionary<string, string>> getLanguages, Func<string[]> getLocalizations, Func<string, string, string> translate, Func<string, string, bool> checkCulture, Func<string, string[]> listLanguagesCulture, Func<string, string, bool> exists)
         {
             this.getLanguages = getLanguages;
             this.getLocalizations = getLocalizations;
