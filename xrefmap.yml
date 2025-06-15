@@ -264,6 +264,19 @@ references:
   commentId: T:LocaleStation.Tools.LanguageCommon
   fullName: LocaleStation.Tools.LanguageCommon
   nameWithType: LanguageCommon
+- uid: LocaleStation.Tools.LanguageCommon.Actions
+  name: Actions
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_Actions
+  commentId: P:LocaleStation.Tools.LanguageCommon.Actions
+  fullName: LocaleStation.Tools.LanguageCommon.Actions
+  nameWithType: LanguageCommon.Actions
+- uid: LocaleStation.Tools.LanguageCommon.Actions*
+  name: Actions
+  href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_Actions_
+  commentId: Overload:LocaleStation.Tools.LanguageCommon.Actions
+  isSpec: "True"
+  fullName: LocaleStation.Tools.LanguageCommon.Actions
+  nameWithType: LanguageCommon.Actions
 - uid: LocaleStation.Tools.LanguageCommon.AddCustomAction(System.String,LocaleStation.Tools.LanguageLocalActions)
   name: AddCustomAction(string, LanguageLocalActions)
   href: api/LocaleStation.Tools.LanguageCommon.html#LocaleStation_Tools_LanguageCommon_AddCustomAction_System_String_LocaleStation_Tools_LanguageLocalActions_
