@@ -41,6 +41,12 @@ namespace LocaleStation.Tools
         }
 
         /// <summary>
+        /// List of local actions
+        /// </summary>
+        public static string[] Actions =>
+            [.. localActions.Keys];
+
+        /// <summary>
         /// Inferred language according to the current UI culture
         /// </summary>
         /// <param name="localAction">Localization action</param>
