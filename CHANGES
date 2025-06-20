@@ -1,10 +1,10 @@
-We have released a new version of LocaleStation to improve performance
+We have released a new version of LocaleStation to improve translation experience
 
 ### Changes
 
 This release contains a variety of changes, including, but not limited to:
 
-- `[*]` Used dictionaries instead of constants
+- `[*]` General improvements
 
 Review the commit history if you want to get a deep insight about the changes.
 
