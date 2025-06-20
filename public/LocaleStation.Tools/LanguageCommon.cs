@@ -75,8 +75,16 @@ namespace LocaleStation.Tools
         /// </summary>
         /// <param name="locId">Localization ID</param>
         /// <returns>Translated string</returns>
-        public static string Translate(string locId) =>
-            Translate(locId, "Terminaux", Language);
+        public static string Translate(string locId)
+        {
+            foreach (string type in Actions)
+            {
+                var action = GetAction(type);
+                if (action.Exists.Invoke(locId, Language))
+                    return Translate(locId, type, Language);
+            }
+            return locId;
+        }
 
         /// <summary>
         /// Translates the string using a specified localization ID
