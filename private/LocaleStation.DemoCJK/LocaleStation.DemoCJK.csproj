@@ -10,7 +10,7 @@
     <ProjectReference Include="..\..\public\LocaleStation.Tools\LocaleStation.Tools.csproj" />
     <ProjectReference Include="..\..\public\LocaleStation\LocaleStation.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 
-    <PackageReference Remove="Microsoft.SourceLink.GitHub" />
+    <PackageReference Remove="Microsoft.SourceLink.GitLab" />
   </ItemGroup>
 
   <ItemGroup>
