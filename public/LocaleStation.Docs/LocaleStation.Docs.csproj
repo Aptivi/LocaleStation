@@ -13,7 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LocaleStation\LocaleStation.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
 
-    <PackageReference Remove="Microsoft.SourceLink.GitLab" />
+    <PackageReference Remove="Microsoft.SourceLink.GitHub" />
   </ItemGroup>
 
 </Project>
