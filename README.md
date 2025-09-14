@@ -36,7 +36,7 @@
 
 <!----------------------------------------------------------------------------->
 
-[Releases]: https://gitlab.com/aptivi/main/LocaleStation/-/releases
+[Releases]: https://github.com/Aptivi/LocaleStation/releases
 [NuGet]: https://www.nuget.org/packages/LocaleStation/
 
 [Libraries]: https://aptivi.gitbook.io/LocaleStation-manual/project-dependencies

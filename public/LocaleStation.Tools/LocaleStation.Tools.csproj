@@ -11,9 +11,9 @@
     <AssemblyName>LocaleStation.Tools</AssemblyName>
     <PackageId>LocaleStation.Tools</PackageId>
     <PackageTags>library;csharp</PackageTags>
-    <PackageProjectUrl>https://gitlab.com/aptivi/main/LocaleStation</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Aptivi/LocaleStation</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://gitlab.com/aptivi/main/LocaleStation</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Aptivi/LocaleStation</RepositoryUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>

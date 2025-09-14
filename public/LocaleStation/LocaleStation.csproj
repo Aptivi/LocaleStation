@@ -8,9 +8,9 @@
     <AssemblyName>LocaleStation</AssemblyName>
     <PackageId>LocaleStation</PackageId>
     <PackageTags>library;csharp</PackageTags>
-    <PackageProjectUrl>https://gitlab.com/aptivi/main/LocaleStation</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Aptivi/LocaleStation</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://gitlab.com/aptivi/main/LocaleStation</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Aptivi/LocaleStation</RepositoryUrl>
     <GenerateDocumentationFile>False</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <IncludeSymbols>false</IncludeSymbols>
